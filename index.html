@@ -4,12 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tolu Okeowo | Data Scientist</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: "Orbitron", sans-serif;
+        background-color: #0f111a;
+        color: #e0e6f1;
+        line-height: 1.6;
+      }
+      h1,
+      h2 {
+        color: #00fff7;
+        border-left: 5px solid #00fff7;
+        padding-left: 1rem;
+        margin-top: 2rem;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 255, 255, 0.1);
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+        transition: all 0.3s ease;
+      }
+      li:hover {
+        transform: scale(1.01);
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+      }
+      a {
+        color: #00fff7;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        margin: 0.5rem 0 1rem;
+      }
+      .contact ul li {
+        margin-bottom: 0.5rem;
+      }
+    </style>
   </head>
   <body>
     <h1>Hello, I'm Tolu Okeowo</h1>
     <p>
-      MS Data Science and Analytics | Passionate about Machine Learning & Data
-      Engineering
+      MS Data Science and Analytics | Passionate about Machine Learning, Data
+      Engineering & Software Engineering
     </p>
 
     <h2>Projects</h2>
@@ -17,68 +72,45 @@
       <li>
         <strong>Cuisine Predictor</strong>
         <p>
-          This project is a command-line cuisine prediction tool that uses
-          natural language processing (NLP) to identify the closest-matching
-          cuisine based on a list of input ingredients. By vectorizing
-          ingredient lists using TF-IDF and comparing them with a historical
-          dataset, the program outputs the most similar cuisines based on cosine
-          similarity scores.
+          Command-line cuisine prediction tool using NLP and cosine similarity
+          on TF-IDF ingredient vectors.
         </p>
-        <br />
         Python, Scikit-Learn, NumPy<br />
         <a href="https://github.com/okeowot/cuisinepredictor">GitHub Repo</a>
       </li>
       <li>
         <strong>Sports Brochure</strong>
         <p>
-          This project is a Python-based sports season brochure generator using
-          OpenAI's GPT models and Gradio for a web interface. It scrapes a link
-          for sports seasons, extracts relevant links, and generates a humorous,
-          detailed summary of the season.
+          Generates humorous sports summaries using OpenAI models and Gradio
+          from scraped data.
         </p>
-        <br />
-        Python, Jupyter, gradio, beautiful soup<br />
+        Python, Jupyter, Gradio, Beautiful Soup<br />
         <a href="https://github.com/okeowot/sportsbrochure">GitHub Repo</a>
       </li>
       <li>
         <strong>Rainfall Prediction with Ensemble Models</strong>
         <p>
-          The data set is derived from the [Oklahoma
-          Mesonet](https://www.mesonet.org/files/materials/mesonet.pdf). This is
-          a network of weather stations scattered across the state of Oklahoma
-          (at least one station in each county) that measure many different
-          meteorological variables every 5 minutes. Our dataset contains a
-          single summary sample for each station and each day from 1994 to 2000.
-          Given the above data, we are predicting the total rainfall for the
-          day.
+          Predicts rainfall totals using historical weather data from the
+          Oklahoma Mesonet.
         </p>
-        <br />
         Python, Pandas, NumPy, Scikit-Learn<br />
         <a href="https://github.com/okeowot/Weather-Prediction">GitHub Repo</a>
       </li>
       <li>
         <strong>Information Redaction Script</strong>
         <p>
-          This Python script redacts personally identifiable information (PII)
-          from incident summaries using a combination of regular expressions,
-          spaCy NLP, and custom rules. It supports redacting names, dates, phone
-          numbers, gendered terms, and physical addresses from text documents
-          and provides detailed redaction statistics.
+          Redacts PII from incident summaries using regex and spaCy NLP,
+          outputting redaction stats.
         </p>
-        <br />
         Python, spaCy, regex<br />
         <a href="https://github.com/okeowot/redactor">GitHub Repo</a>
       </li>
       <li>
         <strong>Norman Police Incident</strong>
         <p>
-          This project automates the process of fetching, extracting, cleaning,
-          and storing incident reports from PDF files provided by the Norman
-          Police Department. The tool parses structured data such as date/time,
-          incident number, location, type, and report ID, and stores it in a
-          SQLite database for easy querying and analysis.
+          Extracts, cleans, and stores PDF-based incident reports from Norman PD
+          in SQLite.
         </p>
-        <br />
         Python, NLP, spaCy<br />
         <a href="https://github.com/okeowot/norman-police-dataextraction"
           >GitHub Repo</a
@@ -87,10 +119,12 @@
     </ul>
 
     <h2>Contact</h2>
-    <ul>
-      <li>Email: toluo.okeowo@gmail.com</li>
-      <li><a href="https://linkedin.com/in/tolu-okeowo">LinkedIn</a></li>
-      <li><a href="https://github.com/okeowot">GitHub</a></li>
-    </ul>
+    <div class="contact">
+      <ul>
+        <li>Email: toluo.okeowo@gmail.com</li>
+        <li><a href="https://linkedin.com/in/tolu-okeowo">LinkedIn</a></li>
+        <li><a href="https://github.com/okeowot">GitHub</a></li>
+      </ul>
+    </div>
   </body>
 </html>
